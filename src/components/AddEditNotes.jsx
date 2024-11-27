@@ -23,7 +23,7 @@ const AddEditNotes = ({ onClose, type, noteData }) => {
   const { data } = useGetKeyQuery();
 
   return (
-    <div className="relative rounded-lg shadow-xl p-5  mx-auto">
+    <div className="relative rounded-lg shadow-xl p-5  mx-auto !z-50">
       {/* Close Button */}
       <button
         className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 focus:outline-none"

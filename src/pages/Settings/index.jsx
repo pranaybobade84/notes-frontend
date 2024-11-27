@@ -35,18 +35,18 @@ const SettingsAndActivity = () => {
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen md:h-[89vh]">
+    <div className="flex flex-col md:flex-row  md:mt-[4.4rem] h-screen">
       {/* Sidebar Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="md:hidden p-2 bg-blue-500 text-white fixed top-4 right-4 z-50 rounded-full shadow-lg mt-4"
+        className="md:hidden p-2 bg-blue-500 text-white fixed top-1.5 right-4 z-10 md:z-0  rounded-full shadow-lg"
       >
         {isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
       </button>
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 left-0 w-64 bg-gray-100 shadow-lg p-4 transform z-[9999] ${
+        className={`fixed inset-y-0 left-0 w-64 bg-gray-100 shadow-lg p-4 transform md:z-0 z-[9999] ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:translate-x-0 md:static md:w-1/4`}
       >

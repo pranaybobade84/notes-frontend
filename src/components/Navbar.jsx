@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="py-3 md:py-1.5 px-4 md:px-8 shadow-lg bg-white ">
+    <header className="py-3 md:py-1.5 px-4 md:px-8 shadow-lg bg-white fixed top-0 w-full z-10">
       <nav className="flex justify-between items-center">
         {/* Left Side (Logo and Menu) */}
         <div className="flex items-center gap-x-4">

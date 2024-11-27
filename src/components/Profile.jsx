@@ -38,7 +38,7 @@ const Profile = () => {
       className={`md:flex gap-x-3 items-center absolute md:static  ${
         isOpen
           ? " hidden"
-          : "flex gap-3  z-[999] flex-col  !right-3 bg-black h-52 w-40 rounded-lg  justify-center items-center top-5"
+          : "flex gap-3  z-[999] flex-col  !right-3 bg-black h-52 w-40 rounded-lg  justify-center items-center top-14"
       }`}
     >
       <X

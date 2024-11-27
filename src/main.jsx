@@ -25,6 +25,7 @@ import EditProfile from "./components/EditProfileInfo.jsx";
 import DeleteAccount from "./components/DeleteAccount.jsx";
 import { ToastContainer } from "react-toastify";
 import SearchResults from "./pages/SearchPage/index.jsx";
+import PageNotFound from "./components/PageNotFound.jsx";
 
 // Define the routes
 const router = createBrowserRouter([
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
         element: <SearchResults />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
   },
 ]);
 

@@ -55,7 +55,7 @@ const PrivateNoteAccessLogin = () => {
     }
   }, [isError, isSuccess, data, errMsg, dispatch, navigate]);
   return (
-    <div className="p-6 max-w-sm mx-auto bg-gray-100 rounded-lg shadow-md my-auto ">
+    <div className="p-6 max-w-sm mx-auto bg-gray-100 rounded-lg shadow-md  ">
       <h1 className="text-2xl font-semibold text-gray-800 mb-4">
         Access Private Notes
       </h1>

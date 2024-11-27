@@ -13,17 +13,6 @@ const authEndPoints = apiSlice.injectEndpoints({
         const { data } = response;
 
         localStorage.setItem("accessToken", data?.accessToken);
-        // if (data) {
-
-        //   localStorage.setItem("accessToken", data?.accessToken);
-        // const { data } = response;
-
-        //   localStorage.setItem("accessToken", data?.accessToken);
-
-        //   setTimeout(() => {
-        //     localStorage.removeItem("accessToken");
-        //   }, 5000);
-        // }
         return response;
       },
     }),
@@ -40,6 +29,10 @@ const authEndPoints = apiSlice.injectEndpoints({
         url: "auth/logout",
         method: "POST",
       }),
+      transformResponse: (response) => {
+        localStorage.removeItem("accessToken");
+        return response;
+      },
       invalidatesTags: ["auth"],
     }),
     refreshToken: builder.mutation({

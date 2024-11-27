@@ -134,7 +134,7 @@ const SetPrivateKey = () => {
   }, [activeForm]);
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-gray-100 rounded-lg shadow-md">
+    <div className="p-6 max-w-md mx-auto bg-gray-100 rounded-lg shadow-md ">
       {/* Form Toggle Buttons */}
       <div className="flex space-x-4 mb-6">
         <button
